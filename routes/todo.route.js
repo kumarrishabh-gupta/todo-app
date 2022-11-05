@@ -33,16 +33,16 @@ const router = express.Router();
     }
 });
 
-// router.post('/', TodoController.createTodo);
+router.post('/', TodoController.createTodo);
 
 router.get('/', TodoController.getTodos);
 
-// router.get('/:todoId', TodoController.getTodo);
+router.get('/:todoId', TodoController.getTodo);
 
-// router.put('/:todoId', TodoController.updateTodo);
+router.put('/:todoId', TodoController.updateTodo);
 
-// router.patch('/:todoId', TodoController.completeTodo);
+router.patch('/:todoId', TodoController.completeTodo);
 
-// router.delete('/:todoId', TodoController.deleteTodo);
+router.delete('/:todoId', TodoController.deleteTodo);
 
 module.exports = router;
