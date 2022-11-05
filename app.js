@@ -28,7 +28,7 @@ app.use(express.urlencoded({extended : true}))
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({extended : true}))
 app.use(bodyParser.json())
-app.set("view engine", "ejs")
+// app.set("view engine", "ejs")
 
 // Use Cors to avoid annoying CORS Errors
 app.use(cors());
